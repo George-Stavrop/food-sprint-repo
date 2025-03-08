@@ -25,6 +25,8 @@ services:
     - frontend:/app/build
     networks:
       - app-network
+    environment:
+    - REACT_APP_API_URL=http://backend:8080
     
 
   
