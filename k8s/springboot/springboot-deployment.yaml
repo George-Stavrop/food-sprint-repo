@@ -14,10 +14,16 @@ spec:
     spec:
       containers:
         - name: springboot
-          image:
+          image: georgeestav/springboot
           ports:
             - containerPort: 8080
           envFrom:
             - configMapRef:
                 name: springboot-config
+          env:
+            - name: STRIPE_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: stripe-key
+                  key: STRIPE_KEY
           imagePullPolicy: Always

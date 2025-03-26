@@ -50,6 +50,8 @@ public class AppConfig {
                 config.setAllowedOrigins(Arrays.asList(
                         "https://volos-dine.vercel.app",
                         "http://localhost:3000"
+                        "http://spingboot-cluster-ip:8080"
+                        "http://react-cluster-ip:80"
                 ));
                 config.setAllowedMethods(Collections.singletonList("*"));
                 config.setAllowCredentials(true);
