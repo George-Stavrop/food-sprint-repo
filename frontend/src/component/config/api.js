@@ -1,6 +1,6 @@
 import axios from "axios"
 
-export const API_URL = "django.georgeestav.dns.cloud.com/api";
+export const API_URL = "http://foodsprint.ddns-ip.net";
 
 export const api = axios.create({
     baseURL: API_URL,

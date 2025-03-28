@@ -51,7 +51,9 @@ public class AppConfig {
                         "https://volos-dine.vercel.app",
                         "http://localhost:8000",
                         "http://spingboot-cluster-ip:8080",
-                        "http://react-cluster-ip:80"
+                        "http://react-cluster-ip:80",
+                        "foodsprint.ddns-ip.net",
+                        "foodsprint.ddns-ip.net/api"
                 ));
                 config.setAllowedMethods(Collections.singletonList("*"));
                 config.setAllowCredentials(true);
